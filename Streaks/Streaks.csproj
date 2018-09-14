@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Product>Streaks</Product>
+    <Version>0.4.0</Version>
+    <Authors>Fedja Bosnic</Authors>
+    <Copyright>Copyright © Fedja Bosnic 2017</Copyright>
+    <Description>A high performance, file backed, append only event streaming library.</Description>
+    <PackageTags>streaks streak events event sourcing store</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/fedjabosnic/streaks</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/fedjabosnic/streaks/raw/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/fedjabosnic/streaks</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+</Project>
